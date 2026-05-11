@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DailyFY Apps</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a1a;
+            color: #e0e0e0;
+            min-height: 100vh;
+        }
+        header {
+            background: linear-gradient(135deg, #1a0a2e, #0d1b0d);
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 1px solid #2a1a4e;
+        }
+        header h1 {
+            font-size: 36px;
+            margin-bottom: 12px;
+            background: linear-gradient(135deg, #FFD700, #b388ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        header p { color: #aaa; font-size: 16px; }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .apps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            margin-bottom: 40px;
+        }
+        .app-card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.08);
+            border-radius: 16px;
+            padding: 28px;
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .app-card:hover { transform: translateY(-4px); }
+        .app-card .icon { font-size: 56px; margin-bottom: 16px; }
+        .app-card h2 { font-size: 20px; margin-bottom: 8px; color: #fff; }
+        .app-card p { color: #aaa; font-size: 14px; margin-bottom: 20px; line-height: 1.6; }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            margin: 4px;
+            transition: opacity 0.2s;
+        }
+        .btn:hover { opacity: 0.85; }
+        .btn-green { background: #1B5E20; color: #FFD700; }
+        .btn-purple { background: #4a148c; color: #b388ff; }
+        .btn-gray { background: rgba(255,255,255,0.08); color: #ccc; }
+        .links {
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+        .links a { color: #888; font-size: 13px; margin: 0 12px; text-decoration: none; }
+        .links a:hover { color: #ccc; }
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: #555;
+            font-size: 13px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div style="font-size:48px; margin-bottom:16px;">📱</div>
+    <h1>DailyFY Apps</h1>
+    <p>Mobil uygulama geliştirici — Android</p>
+</header>
+
+<div class="container">
+    <div class="apps">
+
+        <div class="app-card">
+            <div class="icon">🕌</div>
+            <h2>EzanVakti Plus</h2>
+            <p>Namaz vakitleri, ezan bildirimi, kıble pusulası, yakın camiler, ayet & hadis ve daha fazlası.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.dailyfyapps.ezanvaktiplus" class="btn btn-green">▶ Play Store</a>
+            <a href="https://dailyfyapps.github.io/ezanvakti-privacy-policy/" class="btn btn-gray">Gizlilik</a>
+        </div>
+
+        <div class="app-card">
+            <div class="icon">🔮</div>
+            <h2>Mistik Fal</h2>
+            <p>Kahve falı, tarot, günlük burç yorumları. Yapay zeka destekli kişisel fal deneyimi.</p>
+            <a href="https://play.google.com/store/apps/details?id=com.example.falapp" class="btn btn-purple">▶ Play Store</a>
+            <a href="https://dailyfyapps.github.io/mistikfal-privacy-policy/" class="btn btn-gray">Gizlilik</a>
+        </div>
+
+    </div>
+
+    <div class="links">
+        <a href="mailto:dailyfyapps@gmail.com">📧 dailyfyapps@gmail.com</a>
+        <a href="https://dailyfyapps.github.io/app-ads.txt">app-ads.txt</a>
+    </div>
+</div>
+
+<footer>
+    <p>© 2026 DailyFY Apps. Tüm hakları saklıdır.</p>
+</footer>
+
+</body>
+</html>
